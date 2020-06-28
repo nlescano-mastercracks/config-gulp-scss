@@ -22,14 +22,8 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -69,15 +63,11 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 24rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-size: cover;
 }
 
 .hero .contenido-hero {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
@@ -118,4 +108,160 @@ body {
 .hero .contenido-hero form input[type='text'] {
   width: 100%;
   height: 3rem;
+}
+
+.barra {
+  min-height: 6rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.barra .iconos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .barra .iconos {
+    flex-direction: row;
+  }
+}
+
+.barra .iconos .icono {
+  flex: 1;
+  background-position: 5% center !important;
+  background-size: 2.4rem;
+  text-align: center;
+}
+
+.barra .iconos .icono.icono1 {
+  background-image: url("	../img/icono1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.barra .iconos .icono.icono2 {
+  background-image: url("	../img/icono2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.barra .iconos .icono.icono3 {
+  background-image: url("	../img/icono3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (min-width: 768px) {
+  .barra .iconos .icono {
+    background-position: 20% center !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .barra .iconos .icono {
+    background-position: left center !important;
+  }
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cursos .curso {
+  flex: 0 1 calc(50% - 1rem);
+  border: 1px solid #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.cursos .curso .imagen-curso {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .cursos .curso {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cursos .curso {
+    flex: 0 1 calc(25% - 1rem);
+  }
+}
+
+.info-curso {
+  padding: 1rem;
+}
+
+.info-curso h4 {
+  margin: 0em;
+  font-size: 1.2rem;
+}
+
+.info-curso .precio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-curso .precio .regular {
+  text-decoration: line-through;
+  color: red;
+}
+
+.info-curso .precio .oferta {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: green;
+}
+
+.info-curso .boton {
+  background-color: #741d51;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.footer .contenedor-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer .contenedor-footer {
+    flex-direction: row;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu {
+    flex: 0 1 calc(30% - 1rem);
+  }
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
 }
